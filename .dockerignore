@@ -1,0 +1,3 @@
+**/node_modules
+**/kubernetes-cronjob.yml
+**/Dockerfile

@@ -1,0 +1,26 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: harbor-gc
+spec:
+  schedule: "0 0 * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: job
+            image: iso188/harbor-gc
+            imagePullPolicy: Always
+            env:
+            - name: HARBOR_URL
+              value: ""
+            - name: USERNAME
+              value: ""
+            - name: PASSWORD
+              value: ""
+            - name: IGNORE_HTTPS_ERRORS
+              value: "false"
+          restartPolicy: OnFailure
+
+
