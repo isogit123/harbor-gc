@@ -11,7 +11,7 @@ To build using docker
 ```
 docker build -t harbor-gc .
 ```
-After that run by
+After that run the image by
 ```
 docker run -e "HARBOR_URL=<URL>" -e "USERNAME=<username>" -e "PASSWORD=<password>" -e "IGNORE_HTTPS_ERRORS=<true|false>" iso188/harbor-gc
 ```
