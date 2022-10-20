@@ -14,3 +14,5 @@ docker build -t harbor-gc .
 After that run by
 ```
 docker run -e "HARBOR_URL=<URL>" -e "USERNAME=<username>" -e "PASSWORD=<password>" -e "IGNORE_HTTPS_ERRORS=<true|false>" iso188/harbor-gc
+```
+Pre-built Docker image available at https://hub.docker.com/r/iso188/harbor-gc
